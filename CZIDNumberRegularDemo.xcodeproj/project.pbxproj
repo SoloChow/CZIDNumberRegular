@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750FE05F1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FE05E1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.m */; };
 		75BC3CE91CFEB5D0009A4ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BC3CE81CFEB5D0009A4ADF /* main.m */; };
 		75BC3CEC1CFEB5D0009A4ADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BC3CEB1CFEB5D0009A4ADF /* AppDelegate.m */; };
 		75BC3CEF1CFEB5D0009A4ADF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BC3CEE1CFEB5D0009A4ADF /* ViewController.m */; };
 		75BC3CF21CFEB5D0009A4ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BC3CF01CFEB5D0009A4ADF /* Main.storyboard */; };
 		75BC3CF41CFEB5D0009A4ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BC3CF31CFEB5D0009A4ADF /* Assets.xcassets */; };
 		75BC3CF71CFEB5D0009A4ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BC3CF51CFEB5D0009A4ADF /* LaunchScreen.storyboard */; };
-		75BC3D041CFEB64C009A4ADF /* NSString+CZIDNumberRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BC3D031CFEB64C009A4ADF /* NSString+CZIDNumberRegular.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750FE05D1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZIDNumberRegular.h"; sourceTree = "<group>"; };
+		750FE05E1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZIDNumberRegular.m"; sourceTree = "<group>"; };
 		75BC3CE41CFEB5D0009A4ADF /* CZIDNumberRegularDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZIDNumberRegularDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BC3CE81CFEB5D0009A4ADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75BC3CEA1CFEB5D0009A4ADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		75BC3CF31CFEB5D0009A4ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75BC3CF61CFEB5D0009A4ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75BC3CF81CFEB5D0009A4ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75BC3D021CFEB64C009A4ADF /* NSString+CZIDNumberRegular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZIDNumberRegular.h"; sourceTree = "<group>"; };
-		75BC3D031CFEB64C009A4ADF /* NSString+CZIDNumberRegular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZIDNumberRegular.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750FE05C1CFFCFA700A10B8C /* CZIDNumberRegular */ = {
+			isa = PBXGroup;
+			children = (
+				750FE05D1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.h */,
+				750FE05E1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.m */,
+			);
+			path = CZIDNumberRegular;
+			sourceTree = "<group>";
+		};
 		75BC3CDB1CFEB5D0009A4ADF = {
 			isa = PBXGroup;
 			children = (
-				75BC3CFE1CFEB602009A4ADF /* IDNumberRegular */,
+				750FE05C1CFFCFA700A10B8C /* CZIDNumberRegular */,
 				75BC3CE61CFEB5D0009A4ADF /* CZIDNumberRegularDemo */,
 				75BC3CE51CFEB5D0009A4ADF /* Products */,
 			);
@@ -81,15 +90,6 @@
 				75BC3CE81CFEB5D0009A4ADF /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		75BC3CFE1CFEB602009A4ADF /* IDNumberRegular */ = {
-			isa = PBXGroup;
-			children = (
-				75BC3D021CFEB64C009A4ADF /* NSString+CZIDNumberRegular.h */,
-				75BC3D031CFEB64C009A4ADF /* NSString+CZIDNumberRegular.m */,
-			);
-			path = IDNumberRegular;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +165,8 @@
 			files = (
 				75BC3CEF1CFEB5D0009A4ADF /* ViewController.m in Sources */,
 				75BC3CEC1CFEB5D0009A4ADF /* AppDelegate.m in Sources */,
-				75BC3D041CFEB64C009A4ADF /* NSString+CZIDNumberRegular.m in Sources */,
 				75BC3CE91CFEB5D0009A4ADF /* main.m in Sources */,
+				750FE05F1CFFCFA700A10B8C /* NSString+CZIDNumberRegular.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CZIDNumberRegularDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.zcl.CZIDNumberRegularDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CZIDNumberRegularDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.zcl.CZIDNumberRegularDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,6 +319,7 @@
 				75BC3CFD1CFEB5D0009A4ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
